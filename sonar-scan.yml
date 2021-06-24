@@ -6,5 +6,5 @@ spec:
   steps:
     - name: sonar-scan
       image: linjith/sonar-scan-task:latest
-      command: [ "echo" ]
-      args: [ "scanning in progress..." ]
+      command: [ "sh" ]
+      args: [ "launch.sh" ]
