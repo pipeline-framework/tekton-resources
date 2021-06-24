@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: sonar-scan
+spec:
+  steps:
+    - name: sonar-scan
+      image: linjith/sonar-scan-task:latest
+      command: [ "echo" ]
+      args: [ "scanning in progress..." ]
